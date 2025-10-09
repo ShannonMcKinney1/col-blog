@@ -8,6 +8,7 @@ const {
   PUBLIC_SANITY_DATASET,
 } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 import { defineConfig } from "astro/config";
+import cloudflare from '@astrojs/cloudflare';
 
 // Different environments use different variables
 const projectId = PUBLIC_SANITY_STUDIO_PROJECT_ID || PUBLIC_SANITY_PROJECT_ID;
@@ -24,7 +25,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   // Hybrid+adapter is required to support embedded Sanity Studio
   output: "hybrid",
-  adapter: vercel(),
+  adapter: cloudflare(),
   integrations: [
     sanity({
       projectId,
