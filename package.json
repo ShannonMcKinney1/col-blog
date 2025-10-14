@@ -23,8 +23,5 @@
   "devDependencies": {
     "concurrently": "^9.1.0"
   },
-  "type": "module",
-  "dependencies": {
-    "@astrojs/cloudflare": "^12.6.10"
-  }
+  "type": "module"
 }
