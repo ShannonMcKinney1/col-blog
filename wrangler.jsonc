@@ -1,6 +1,7 @@
 {
   "name": "col-blog",
   "main": "/astro-app/src/pages/index.astro",
+  "pages_build_output_dir": "dist",
   "compatibility_date": "2025-10-15",
   "workers_dev": false,
   "route": {
