@@ -1,0 +1,9 @@
+{
+    // "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "col-blog",
+    "compatibility_date": "2025-10-15",
+    "assets": {
+      "directory": "./dist"
+    },
+    "preview_urls": true
+  }
